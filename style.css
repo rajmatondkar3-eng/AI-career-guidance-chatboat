@@ -1,0 +1,342 @@
+/* ==================================================
+   CYBERPUNK AI THEME
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ==================================================
+   MAIN APP
+================================================== */
+
+.stApp{
+    background: linear-gradient(
+        135deg,
+        #050816,
+        #0d1117,
+        #111827
+    );
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+section[data-testid="stSidebar"]{
+    background:rgba(10,15,30,0.95);
+    backdrop-filter:blur(15px);
+    border-right:2px solid #00ffff;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3{
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+}
+
+/* ==================================================
+   LABELS
+================================================== */
+
+[data-testid="stWidgetLabel"] p{
+    color:#00ffff !important;
+    font-weight:700 !important;
+    text-shadow:0 0 8px #00ffff;
+}
+
+section[data-testid="stSidebar"] label{
+    color:#00ffff !important;
+    font-weight:700;
+    text-shadow:0 0 8px #00ffff;
+}
+
+/* ==================================================
+   HERO BANNER
+================================================== */
+
+.hero-banner{
+    background:linear-gradient(
+        135deg,
+        rgba(0,255,255,0.15),
+        rgba(255,0,255,0.15)
+    );
+
+    border:2px solid #00ffff;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    backdrop-filter:blur(15px);
+
+    margin-bottom:25px;
+
+    animation:glow 3s infinite;
+}
+
+.hero-banner h1{
+    color:#00ffff;
+    font-family:'Orbitron',sans-serif;
+    font-size:42px;
+    text-shadow:0 0 20px #00ffff;
+}
+
+.hero-banner p{
+    color:white;
+    font-size:18px;
+}
+
+/* ==================================================
+   GLASS CARDS
+================================================== */
+
+.glass-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:20px;
+    transition:0.4s;
+}
+
+.glass-card:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 20px #00ffff,
+    0 0 30px rgba(255,0,255,0.4);
+}
+
+/* ==================================================
+   METRIC CARDS
+================================================== */
+
+.metric-card{
+    background:linear-gradient(
+        135deg,
+        #00ffff,
+        #ff00ff
+    );
+
+    color:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.4);
+}
+
+.metric-card h2{
+    color:white;
+}
+
+.metric-card p{
+    color:white;
+}
+
+/* ==================================================
+   INPUTS
+================================================== */
+
+/* ==================================================
+   INPUTS
+================================================== */
+
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"],
+.stMultiSelect div[data-baseweb="select"]{
+
+    background:white !important;
+
+    color:black !important;
+
+    border:1px solid #00ffff !important;
+
+    border-radius:12px !important;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 0 10px rgba(0,255,255,0.2);
+}
+
+/* Typed Text */
+.stTextInput input{
+    color:black !important;
+    font-weight:500 !important;
+}
+
+/* Text Area */
+.stTextArea textarea{
+    color:black !important;
+}
+
+/* Placeholder */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder{
+    color:#666666 !important;
+}
+
+/* Focus Effect */
+.stTextInput input:focus,
+.stTextArea textarea:focus{
+
+    border:1px solid #ff00ff !important;
+
+    box-shadow:
+    0 0 15px #00ffff,
+    0 0 25px #ff00ff !important;
+
+    color:black !important;
+}
+
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.stButton > button{
+
+    background:linear-gradient(
+        135deg,
+        #00ffff,
+        #ff00ff
+    ) !important;
+
+    color:black !important;
+
+    border:none !important;
+
+    border-radius:12px !important;
+
+    font-weight:bold !important;
+
+    transition:0.3s !important;
+}
+
+.stButton > button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 20px #00ffff,
+    0 0 30px #ff00ff;
+}
+
+/* ==================================================
+   PROGRESS BAR
+================================================== */
+
+.stProgress > div > div > div > div{
+
+    background:linear-gradient(
+        90deg,
+        #00ffff,
+        #ff00ff
+    );
+}
+
+/* ==================================================
+   SLIDER
+================================================== */
+
+.stSlider span{
+    color:white !important;
+}
+
+/* ==================================================
+   CHAT
+================================================== */
+
+.stChatMessage{
+
+    background:rgba(255,255,255,0.05);
+
+    border-left:4px solid #00ffff;
+
+    border-radius:15px;
+}
+
+/* ==================================================
+   TABLES
+================================================== */
+
+[data-testid="stTable"]{
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:15px;
+}
+
+/* ==================================================
+   HEADINGS
+================================================== */
+
+h1{
+    color:#00ffff;
+}
+
+h2{
+    color:#ff00ff;
+}
+
+h3{
+    color:#00ffff;
+}
+
+/* ==================================================
+   GLOW ANIMATION
+================================================== */
+
+@keyframes glow{
+
+    0%{
+        box-shadow:0 0 10px #00ffff;
+    }
+
+    50%{
+        box-shadow:
+        0 0 25px #00ffff,
+        0 0 40px #ff00ff;
+    }
+
+    100%{
+        box-shadow:0 0 10px #00ffff;
+    }
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+
+.footer{
+    text-align:center;
+    color:#00ffff;
+    margin-top:30px;
+}
+
+/* ==================================================
+   TABS (Home, Career, Skill Gap Analysis)
+================================================== */
+
+button[data-baseweb="tab"] {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+button[data-baseweb="tab"] p {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+button[aria-selected="true"] {
+    color: white !important;
+    background: rgba(0,255,255,0.15) !important;
+    border-radius: 10px !important;
+}
